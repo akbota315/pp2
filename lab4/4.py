@@ -1,6 +1,6 @@
 import json
 
-with open(r"c:\Users\binur\OneDrive\Рабочий стол\PP2_labs\lab_4\json\sample-data.json") as file:
+with open(r"c:\Users\55555\OneDrive\Рабочий стол\PP2_labs\lab_4\json\sample-data.json") as file:
     data = json.load(file)
 
 interfaces = data["imdata"]
@@ -16,5 +16,6 @@ for item in interfaces:
     description = attributes.get("descr", "")  
     speed = attributes.get("speed", "inherit") 
     mtu = attributes["mtu"]
+
 
     print(f"{dn:<50} {description:<20} {speed:<7} {mtu:<6}")
